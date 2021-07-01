@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Scroll View and Resources We</string>
+    <string name="name">Enter the name</string>
+    <string name="id">Enter the ID</string>
+    <string name="dob">Enter the DOB</string>
+    <string name="blood_group">Enter blood group</string>
+    <string name="phone">Enter phone number</string>
+    <string name="state">Enter state</string>
+    <string name="district">Enter district</string>
+    <string name="address">Enter address</string>
+
+
+</resources>
