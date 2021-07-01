@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SendMail</string>
+    <string name="address">To : Email address</string>
+    <string name="ccaddress"> cc: dcosta123@gmail.com , nrupul456@masai.com</string>
+    <string name="content">Hi Sir, This mail is regarding my leaves as I won’t be able to attend the team meetings due to health issues. Kindly excuse my absence</string>
+</resources>
