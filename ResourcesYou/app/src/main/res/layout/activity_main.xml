@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivman"
+        android:layout_width="90dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="30dp"
+        android:src="@drawable/man" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new Employee"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@+id/ivman"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAdd"
+        android:background="@drawable/main_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvAdd"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            />
+
+    <TextView
+        android:id="@+id/selectOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Option"
+        android:textSize="25sp"
+        android:layout_below="@id/tvAdd"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/rectangle_bg"
+        android:backgroundTint="@color/light_grey"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:text="First Name : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectOption"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvFirstName"
+        android:background="@drawable/rectangle_bg"
+        android:gravity="center_horizontal"
+        android:text="Jonathan"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFirstName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:text="Last Name : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFirstName"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tvLastName"
+        android:background="@drawable/rectangle_bg"
+        android:gravity="center_horizontal"
+        android:text="Doe"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="100dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tvWorkEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLastName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Work Email : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etWorkMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLastName"
+
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/tvWorkEmail"
+        android:background="@drawable/rectangle_bg"
+        android:gravity="center_horizontal"
+        android:text="jonathandoe@cakehr.com"
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="2dp"
+        android:textSize="20sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="( This is also used as login for CakeHR)"
+    android:textColor="@color/grey"
+    android:layout_below="@id/etWorkMail"
+    android:textSize="18sp"
+    android:layout_marginLeft="70dp"
+    android:layout_marginTop="15dp"
+    />
+    0
+</RelativeLayout>
