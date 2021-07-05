@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <ImageButton
+        android:id="@+id/btnSignUpBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_vector"
+        android:background="@color/red"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:background="@color/red"
+        android:gravity="end"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape"
+        android:layout_below="@+id/rlTop"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWelcome"
+            android:text="Continue to Sign Up!"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:layout_above="@+id/etsignupName"
+            android:id="@+id/tvsignName"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Enter the name"
+            android:textColorHint="@color/grey"
+            android:layout_above="@+id/tvsignupEmail"
+            android:id="@+id/etsignupName"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:layout_above="@+id/etsignupEmail"
+            android:id="@+id/tvsignupEmail"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Enter email address"
+            android:textColorHint="@color/grey"
+            android:layout_centerInParent="true"
+            android:id="@+id/etsignupEmail"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:layout_below="@+id/etsignupEmail"
+            android:id="@+id/tvsignupPassword"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Enter password"
+            android:textColorHint="@color/grey"
+            android:layout_below="@+id/tvsignupPassword"
+            android:id="@+id/etsignupPassword"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnsignup_signupa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_margin="20dp"
+            android:layout_above="@+id/btnsignup_sign"
+            android:background="@drawable/button_bg"
+            />
+
+        <TextView
+            android:id="@+id/tvSignup_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an Account ?"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            />
+
+        <Button
+            android:id="@+id/btnsignup_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textColor="@color/red"
+            android:padding="10dp"
+            android:layout_marginRight="40dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
