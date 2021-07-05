@@ -10,36 +10,35 @@
     <RelativeLayout
         android:id="@+id/rlTop"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/btnSignUpBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/back_vector"
-        android:background="@color/red"
-        android:layout_margin="20dp"
-        />
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:background="@color/red"
-        android:gravity="end"
-        android:layout_margin="20dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+        <ImageButton
+            android:id="@+id/btnSignUpBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/red"
+            android:src="@drawable/back_vector" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:background="@color/red"
+            android:gravity="end"
+            android:text="SIGN UP" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_shape"
         android:layout_below="@+id/rlTop"
-        android:padding="20dp"
-        >
+        android:background="@drawable/bg_shape"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/tvWelcome"
@@ -48,8 +47,7 @@
             android:text="Welcome back"
             android:textColor="@color/red"
             android:textSize="25sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvContinue"
@@ -58,115 +56,106 @@
             android:layout_below="@+id/tvWelcome"
             android:text="Continue to Sign Up!"
             android:textColor="@color/red"
-            android:textSize="25sp"
-            />
+            android:textSize="25sp" />
 
         <TextView
+            android:id="@+id/tvsignName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/etsignupName"
+            android:layout_marginBottom="10dp"
             android:text="Name"
             android:textColor="@color/grey"
-            android:textSize="20sp"
-            android:layout_above="@+id/etsignupName"
-            android:id="@+id/tvsignName"
-            android:layout_marginBottom="10dp"
-            />
+            android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/etsignupName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:layout_above="@+id/tvsignupEmail"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/edit_bg"
             android:hint="Enter the name"
-            android:textColorHint="@color/grey"
-            android:layout_above="@+id/tvsignupEmail"
-            android:id="@+id/etsignupName"
-            android:layout_marginBottom="20dp"
-            />
+            android:padding="15dp"
+            android:textColorHint="@color/grey" />
 
         <TextView
+            android:id="@+id/tvsignupEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/etsignupEmail"
+            android:layout_marginBottom="10dp"
             android:text="Email"
             android:textColor="@color/grey"
-            android:textSize="20sp"
-            android:layout_above="@+id/etsignupEmail"
-            android:id="@+id/tvsignupEmail"
-            android:layout_marginBottom="10dp"
-            />
+            android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/etsignupEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/edit_bg"
             android:hint="Enter email address"
-            android:textColorHint="@color/grey"
-            android:layout_centerInParent="true"
-            android:id="@+id/etsignupEmail"
-            android:layout_marginBottom="20dp"
-            />
+            android:padding="15dp"
+            android:textColorHint="@color/grey" />
 
         <TextView
+            android:id="@+id/tvsignupPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/etsignupEmail"
+            android:layout_marginBottom="10dp"
             android:text="Password"
             android:textColor="@color/grey"
-            android:textSize="20sp"
-            android:layout_below="@+id/etsignupEmail"
-            android:id="@+id/tvsignupPassword"
-            android:layout_marginBottom="10dp"
-            />
+            android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/etsignupPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:layout_below="@+id/tvsignupPassword"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/edit_bg"
             android:hint="Enter password"
-            android:textColorHint="@color/grey"
-            android:layout_below="@+id/tvsignupPassword"
-            android:id="@+id/etsignupPassword"
-            android:layout_marginBottom="20dp"
-            />
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColorHint="@color/grey" />
 
         <Button
-            android:id="@+id/btnsignup_signupa"
+            android:id="@+id/btnsignup_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:padding="10dp"
-            android:textAllCaps="true"
-            android:layout_margin="20dp"
             android:layout_above="@+id/btnsignup_sign"
+            android:layout_margin="20dp"
             android:background="@drawable/button_bg"
-            />
+            android:padding="10dp"
+            android:text="Sign Up"
+            android:textAllCaps="true" />
 
         <TextView
             android:id="@+id/tvSignup_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Have an Account ?"
-            android:textColor="@color/grey"
-            android:textSize="16sp"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="60dp"
-            />
+            android:text="Have an Account ?"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnsignup_sign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign in"
-            android:textColor="@color/red"
-            android:padding="10dp"
-            android:layout_marginRight="40dp"
-            android:textAllCaps="false"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
             android:background="@color/white"
-            />
+            android:padding="10dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/red" />
 
     </RelativeLayout>
 

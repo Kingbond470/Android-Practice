@@ -11,23 +11,23 @@
         android:id="@+id/tvHomeWelcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textColor="@color/white"
         android:layout_margin="50dp"
         android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/white"
         android:textSize="30sp"
 
         />
+
     <TextView
         android:id="@+id/tvHomeUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvHomeWelcome"
+        android:layout_centerInParent="true"
         android:text="Lloyd Dcosta"
         android:textColor="@color/white"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        />
+        android:textSize="30sp" />
 
 
 </RelativeLayout>

@@ -14,6 +14,7 @@ public class SignUpActivity extends AppCompatActivity {
     private ImageButton btnBack;
     private EditText etusername, etPassword, etEmail;
     private String validEmail = "[a-zA-Z0-9.-_]+@[a-z]+\\.+[a-z]+";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,16 +28,18 @@ public class SignUpActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        if(isValidUsername() && isValidEmail() && isValidPassword()) {
-            btnSignUp.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isValidUsername() && isValidEmail() && isValidPassword()) {
                     Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
-                    intent.putExtra("username",etusername.getText().toString());
+                    intent.putExtra("username", etusername.getText().toString());
                     startActivity(intent);
                 }
-            });
-        }
+            }
+        });
+
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,20 +56,20 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.btnsignup_signup);
         btnBack = findViewById(R.id.btnSignUpBack);
         etusername = findViewById(R.id.etsignupName);
-        etEmail=findViewById(R.id.etsignupEmail);
+        etEmail = findViewById(R.id.etsignupEmail);
         etPassword = findViewById(R.id.etsignupPassword);
 
     }
 
-    protected boolean isValidEmail(){
-        if(etEmail.getText().toString().length()>1 && etEmail.getText().toString().matches(validEmail)){
+    protected boolean isValidEmail() {
+        if (etEmail.getText().toString().length() > 1 && etEmail.getText().toString().matches(validEmail)) {
             return true;
-        }
-        else{
+        } else {
             etEmail.setError("Invalid Email");
             return false;
         }
     }
+
     protected boolean isValidUsername() {
         if (etusername.getText().toString().length() >= 4) {
             return true;

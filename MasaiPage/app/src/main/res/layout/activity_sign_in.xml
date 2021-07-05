@@ -10,36 +10,35 @@
     <RelativeLayout
         android:id="@+id/rlTop"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/btnSignInBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/back_vector"
-            android:background="@color/red"
             android:layout_margin="20dp"
-            />
+            android:background="@color/red"
+            android:src="@drawable/back_vector" />
+
         <Button
             android:id="@+id/btnSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN IN"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
             android:background="@color/red"
             android:gravity="end"
-            android:layout_margin="20dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" />
+            android:text="SIGN IN" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_shape"
         android:layout_below="@+id/rlTop"
-        android:padding="20dp"
-        >
+        android:background="@drawable/bg_shape"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/tvWelcome"
@@ -48,8 +47,7 @@
             android:text="Welcome back"
             android:textColor="@color/red"
             android:textSize="25sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvContinue"
@@ -58,106 +56,100 @@
             android:layout_below="@+id/tvWelcome"
             android:text="Continue to Sign in!"
             android:textColor="@color/red"
-            android:textSize="25sp"
-            />
+            android:textSize="25sp" />
 
         <TextView
+            android:id="@+id/tvsignInName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/etsigninName"
+            android:layout_marginBottom="10dp"
             android:text="Name"
             android:textColor="@color/grey"
-            android:textSize="20sp"
-            android:layout_above="@+id/etsigninName"
-            android:id="@+id/tvsignInName"
-            android:layout_marginBottom="10dp"
-            />
+            android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/etsigninName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:layout_above="@+id/tvsigninPassword"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/edit_bg"
             android:hint="Enter the name"
-            android:textColorHint="@color/grey"
-            android:layout_marginBottom="20dp"
-            android:layout_above="@+id/tvsigninPassword"
-            android:id="@+id/etsigninName"
-            />
+            android:padding="15dp"
+            android:textColorHint="@color/grey" />
 
         <TextView
+            android:id="@+id/tvsigninPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/etsigninPassword"
+            android:layout_marginBottom="10dp"
             android:text="Password"
             android:textColor="@color/grey"
             android:textSize="20sp"
-            android:layout_above="@+id/etsigninPassword"
-            android:id="@+id/tvsigninPassword"
-            android:layout_marginBottom="10dp"
 
             />
 
         <EditText
+            android:id="@+id/etsigninPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/edit_bg"
             android:hint="Enter password"
-            android:textColorHint="@color/grey"
-            android:layout_centerInParent="true"
-            android:id="@+id/etsigninPassword"
-            android:layout_marginBottom="20dp"
-            />
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColorHint="@color/grey" />
 
         <Button
+            android:id="@+id/btnForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Forgot Password?"
-            android:textColor="@color/red"
             android:layout_below="@+id/etsigninPassword"
-            android:id="@+id/btnForgotPassword"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:textAlignment="textEnd"
             android:background="#00000000"
-            android:gravity="end" />
+            android:gravity="end"
+            android:text="Forgot Password?"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red" />
 
         <Button
             android:id="@+id/btnsignin_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign In"
-            android:padding="10dp"
-            android:textAllCaps="true"
-            android:layout_margin="20dp"
             android:layout_above="@+id/btnsigin_signup"
+            android:layout_margin="20dp"
             android:background="@drawable/button_bg"
-            />
+            android:padding="10dp"
+            android:text="Sign In"
+            android:textAllCaps="true" />
 
         <TextView
             android:id="@+id/tvSignup_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"
-            android:textColor="@color/grey"
-            android:textSize="16sp"
             android:layout_below="@+id/btnsignin_signin"
             android:layout_marginLeft="60dp"
             android:layout_marginBottom="20dp"
-            />
+            android:text="Don't have an account?"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnsigin_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="@color/red"
-            android:padding="10dp"
-            android:layout_marginRight="40dp"
-            android:textAllCaps="false"
             android:layout_alignParentBottom="true"
-            android:gravity="center"
+            android:layout_marginRight="40dp"
             android:background="#00000000"
-            />
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/red" />
 
     </RelativeLayout>
 

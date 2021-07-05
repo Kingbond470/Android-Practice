@@ -21,16 +21,18 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
         initViews();
-        if (isValidUsername() && isValidPassword()) {
-            btnSignIn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isValidUsername() && isValidPassword()) {
                     Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
-                    intent.putExtra("username",etusername.getText().toString());
+                    intent.putExtra("username", etusername.getText().toString());
                     startActivity(intent);
                 }
-            });
-        }
+            }
+        });
+
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +54,7 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     protected void initViews() {
-        btnSignIn = findViewById(R.id.btnSignIn);
+        btnSignIn = findViewById(R.id.btnsignin_signin);
         btnSignUp = findViewById(R.id.btnsigin_signup);
         btnForgot = findViewById(R.id.btnForgotPassword);
         btnBack = findViewById(R.id.btnSignInBack);
