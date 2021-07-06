@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".SecondScreen">
+
+    <TextView
+        android:id="@+id/tvSFirstName"
+        style="@style/edit_text"
+        android:text="@string/first_name" />
+
+    <TextView
+        android:id="@+id/tvSLastName"
+        style="@style/edit_text"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/tvSEmailAddress"
+        style="@style/edit_text"
+        android:text="@string/first_name" />
+
+    <EditText
+        android:id="@+id/etSNoOfSeats"
+        style="@style/edit_text"
+        android:hint="@string/no_of_seats"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/etSDateOfShow"
+        style="@style/edit_text"
+        android:hint="@string/date_of_show"
+        android:inputType="date"
+        />
+
+    <Button
+        android:id="@+id/btnSPreview"
+        style="@style/edit_text"
+        android:gravity="center_horizontal"
+        android:text="Preview" />
+
+</LinearLayout>

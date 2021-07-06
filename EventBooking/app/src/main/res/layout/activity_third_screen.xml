@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center"
+    tools:context=".ThirdScreen">
+
+    <TextView
+        android:id="@+id/tvTFirstName"
+        style="@style/edit_text"
+        android:text="@string/first_name" />
+
+    <TextView
+        android:id="@+id/tvTLastName"
+        style="@style/edit_text"
+        android:text="@string/last_name" />
+
+    <TextView
+        android:id="@+id/tvTEmailAddress"
+        style="@style/edit_text"
+        android:text="@string/email_address" />
+    <TextView
+        android:id="@+id/tvTPhoneNumber"
+        style="@style/edit_text"
+        android:text="@string/phone_number" />
+    <TextView
+        android:id="@+id/tvTNoOfSeats"
+        style="@style/edit_text"
+        android:text="@string/no_of_seat" />
+    <TextView
+        android:id="@+id/tvTDateOfShow"
+        style="@style/edit_text"
+        android:text="@string/t_date_of_show" />
+
+    <Button
+        android:id="@+id/btnTConfirm"
+       style="@style/edit_text"
+        android:text="@string/confirm"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>

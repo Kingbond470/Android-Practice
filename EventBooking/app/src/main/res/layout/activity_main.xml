@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etFirstName"
+        style="@style/edit_text"
+        android:hint="@string/firstname" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        style="@style/edit_text"
+        android:hint="@string/lastname" />
+
+    <EditText
+        android:id="@+id/etEmailAdderss"
+        style="@style/edit_text"
+        android:hint="@string/emailaddress" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        style="@style/edit_text"
+        android:hint="@string/phonenumber"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnSecondScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Second Screen"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
