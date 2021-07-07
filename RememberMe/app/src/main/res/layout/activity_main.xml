@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--The app has a login screen where the user can enter username ,password and
+    a checkbox which will remember user(if the box is selected remember the user) and
+    a button to proceed to HomeScreen. -->
+
+    <TextView
+        style="@style/style_tv"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        style="@style/style_et"
+        android:hint="Enter Username" />
+
+    <TextView
+        style="@style/style_tv"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/style_et"
+        android:hint="Enter Password" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/btnCheckBox"
+            style="@style/style_et"
+            android:shadowColor="@color/black" />
+
+        <TextView
+            style="@style/style_tv"
+            android:text="Remember me" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/style_tv"
+        android:text="Login" />
+
+
+</LinearLayout>

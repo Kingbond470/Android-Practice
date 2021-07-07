@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeScreenActivity">
+
+    <TextView
+        style="@style/style_tv"
+        android:gravity="center_horizontal"
+        android:text="Welcome "
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tvUsername"
+        style="@style/style_tv"
+        android:gravity="center_horizontal"
+        android:text="USername"
+        android:textSize="30sp" />
+
+
+</LinearLayout>
