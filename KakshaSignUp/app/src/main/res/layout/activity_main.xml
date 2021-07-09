@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/back_vector"
+        android:drawablePadding="40dp"
+        android:textSize="25sp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:padding="5dp"
+    android:layout_below="@+id/tvLogin"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="alma.lawson@example.com"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jane Cooper"
+            android:fontFamily="@font/poppins_light"
+            android:textColorHint="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password (minimum 6 characters)"
+            android:textColorHint="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use phone number"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_light"
+            />
+
+        <Button
+            android:id="@+id/btnsignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_up"
+            android:text="Sign up"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_light"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_light"
+            />
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook_bg"
+            android:text="Continue with facebook "
+            android:drawableLeft="@drawable/facebook_vector"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            />
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/google_bg"
+            android:text="Continue with google "
+            android:textColor="@color/black"
+            android:paddingLeft="40dp"
+            android:drawableLeft="@drawable/google_vector"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+</RelativeLayout>
