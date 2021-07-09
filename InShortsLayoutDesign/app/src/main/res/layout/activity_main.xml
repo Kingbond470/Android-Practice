@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSmoking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smoking"
+        android:drawableLeft="@drawable/back_vector"
+        android:background="@color/new_black"
+        android:textColor="@color/white"
+        android:drawablePadding="20dp"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:drawableRight="@drawable/home_vector"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_below="@+id/tvSmoking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white"
+        >
+        <ImageView
+            android:id="@+id/imCigrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cigrate"
+            android:scaleX="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_vector"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="50dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@+id/cvImage"
+        android:id="@+id/viewPunjab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+   <View
+       android:layout_width="5dp"
+       android:layout_height="50dp"
+       android:layout_below="@+id/cvImage"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/red"
+       />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/punjab_ban"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:textSize="24sp"
+        android:padding="5dp"
+        />
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/textImage"
+    android:scrollbars="none"
+    android:layout_above="@+id/tvPublished"
+    android:layout_below="@+id/viewPunjab"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/tvCigrateText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/cigrate_string"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        />
+</ScrollView>
+
+    <TextView
+        android:id="@+id/tvPublished"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/published"
+        android:textSize="21sp"
+        android:background="@color/new_black"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        />
+
+</RelativeLayout>
