@@ -1,0 +1,2 @@
+rootProject.name = "Calendar scrolling"
+include ':app'
