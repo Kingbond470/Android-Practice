@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <LinearLayout
+          android:id="@+id/linearLayoutMain"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <!-- First Image Linear Layout-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              >
+              <ImageView
+
+                  android:layout_width="match_parent"
+                  android:layout_height="330dp"
+                  android:src="@drawable/hagoromo_otsutsuki"
+                  android:scaleType="fitXY"
+                  />
+              <!-- for content and article-->
+              <LinearLayout
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Featured"
+                      android:gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/grey"
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/poppins"
+                      android:gravity="center"
+                      android:text="Blue Ocean \n Waves Crash"
+                      android:textColor="@color/black"
+                      android:textSize="28sp"
+                      android:textStyle="normal" />
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/circle_vector"
+                      android:layout_gravity="center"
+                      android:padding="5dp"
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="See the beautiful oceans of the \n Pacific Coast where water is so \n clean you can see the sand"
+                      android:justificationMode="inter_word"
+                      android:gravity="center"
+                      android:padding="10dp"
+                      />
+              </LinearLayout>
+
+
+          </LinearLayout> <!--end of first article-->
+
+
+          <!--second layout -->
+          <!-- First Image Linear Layout-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+
+              >
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="330dp"
+                  android:src="@drawable/naruto"
+                  android:scaleType="fitXY"
+                  />
+              <!-- for content and article-->
+              <LinearLayout
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Featured"
+                      android:gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/grey"
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="@font/poppins"
+                      android:gravity="center"
+                      android:text="Long Exposure \n River Bridge"
+                      android:textColor="@color/black"
+                      android:textSize="28sp"
+                      android:textStyle="normal" />
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/circle_vector"
+                      android:layout_gravity="center"
+                      android:padding="5dp"
+                      />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="See the beautiful oceans of the \n Pacific Coast where water is so \n clean you can see the sand"
+                      android:justificationMode="inter_word"
+                      android:gravity="center"
+                      android:padding="10dp"
+                      />
+              </LinearLayout>
+
+          </LinearLayout> <!--end of first article-->
+
+      </LinearLayout>
+  </ScrollView>
+
+</RelativeLayout>
