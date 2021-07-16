@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/btnNrupul"
+        android:layout_width="141dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Nrupul"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnPrateek"
+        android:layout_width="140dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Prateeek"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toEndOf="@+id/btnNrupul"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/new_black"
+        app:layout_constraintTop_toBottomOf="@+id/btnNrupul"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/albert"
+        android:layout_width="245dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="Albert"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="Aman"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
