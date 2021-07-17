@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Microsoft"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:id="@+id/cardivImage"
+            android:layout_below="@id/tvCompanyName"
+            app:cardCornerRadius="1dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/ivImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bill_gates"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="4dp"
+            android:text="Age : 64"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/cardivImage"
+            android:layout_below="@+id/tvCompanyName"
+            android:layout_margin="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvProfression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="4dp"
+            android:text="Profression : Business"
+            android:layout_below="@+id/tvAge"
+            android:layout_toRightOf="@+id/cardivImage"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
