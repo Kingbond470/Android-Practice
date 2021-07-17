@@ -1,0 +1,2 @@
+rootProject.name = "Birds Grid View"
+include ':app'
