@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Get Resources API</string>
+    <string name="enter_the_number">Enter the number</string>
+    <string name="data_send">Data Send</string>
+</resources>
