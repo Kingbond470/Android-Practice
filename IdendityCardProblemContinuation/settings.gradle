@@ -1,0 +1,2 @@
+rootProject.name = "Idendity Card Problem Continuation"
+include ':app'
