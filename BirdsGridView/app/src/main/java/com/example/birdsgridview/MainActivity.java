@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity implements BirdClickListener
 
     private RecyclerView recyclerView;
 private Adapter adapter;
-private BirdClickListener birdClickListener;
 private ArrayList<Bird> birdList=new ArrayList<>();
 
 
@@ -31,6 +30,10 @@ private ArrayList<Bird> birdList=new ArrayList<>();
         Bird crow=new Bird(R.drawable.crow,"Crow");
         Bird eagle=new Bird(R.drawable.eagle,"Eagle");
         Bird red=new Bird(R.drawable.red,"Red");
+//        birdList.add(chuck);
+//        birdList.add(chuck);
+//        birdList.add(crow);
+//        birdList.add(red);
         for(int i=0; i<100; i++){
             if(i%4==0) birdList.add(red);
             else if(i%4==1) birdList.add(crow);
@@ -41,7 +44,7 @@ private ArrayList<Bird> birdList=new ArrayList<>();
 
     private void setRecycleView() {
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,4);
-        adapter=new Adapter(birdList,birdClickListener);
+        adapter=new Adapter(birdList,this);
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(adapter);
 

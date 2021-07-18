@@ -23,10 +23,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
     public void setData(Bird bird){
         ivImage.setImageResource(bird.getBirdImage());
+      //  ivImage.setImageResource(animal.getImage());
         ivImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 birdClickListener.onBirdClick(getAdapterPosition(),bird);
+              //  animalInterface.onImageClick(getAdapterPosition(),animal);
             }
         });
     }

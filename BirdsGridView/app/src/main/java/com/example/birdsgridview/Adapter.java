@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<ViewHolder> {
-    private ArrayList<Bird> birdList=new ArrayList<>();
+    private ArrayList<Bird> birdList;
     private BirdClickListener birdClickListener;
 
     public Adapter(ArrayList<Bird> birdList, BirdClickListener birdClickListener) {
