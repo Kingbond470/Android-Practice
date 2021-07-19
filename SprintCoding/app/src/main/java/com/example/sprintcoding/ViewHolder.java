@@ -1,6 +1,7 @@
 package com.example.sprintcoding;
 
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     //    hospitalizedCurrently,onVentilatorCurrently,
     //    death, dateChecked
     private TextView tvDate, tvPositive, tvNegative, tvHospitalizedCurrently, tvVentilaorCurrently, tvDeath, tvDateChecked;
+    private LinearLayout linearLayout;
 
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -25,10 +27,11 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         tvVentilaorCurrently = itemView.findViewById(R.id.tvVentilatorCurrent);
         tvDeath = itemView.findViewById(R.id.tvDeath);
         tvDateChecked = itemView.findViewById(R.id.tvDateChecked);
+        linearLayout=itemView.findViewById(R.id.linearLayoutData);
     }
 
 
-    public void setData(ResponseModel responseModel) {
+    public void setData(ResponseModel responseModel, ClickListener clickListener) {
         int date=responseModel.getDate();
         String res=Integer.toString(date);
         String value=res.substring(0,4)+"-"+res.substring(4,6)+"-"+res.substring(6,8);
@@ -41,5 +44,20 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         String dateCheck=responseModel.getDateChecked();
         String value1=dateCheck.substring(0,4)+"-"+dateCheck.substring(5,7)+dateCheck.substring(7,10);
         tvDateChecked.setText(value1);
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickListener.onItemLongClicked(responseModel);
+            }
+        });
+
+        linearLayout.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                clickListener.itemDelete(responseModel);
+                return false;
+            }
+        });
     }
 }

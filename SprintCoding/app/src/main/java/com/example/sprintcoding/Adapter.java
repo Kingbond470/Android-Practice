@@ -12,9 +12,11 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     private List<ResponseModel> dataList;
+    private ClickListener clickListener;
 
-    public Adapter(List<ResponseModel> dataList) {
+    public Adapter(List<ResponseModel> dataList, ClickListener clickListener) {
         this.dataList = dataList;
+        this.clickListener=clickListener;
     }
 
     @NonNull
@@ -27,7 +29,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ResponseModel responseModel = dataList.get(position);
-        holder.setData(responseModel);
+        holder.setData(responseModel,clickListener);
     }
 
     @Override

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HomeScreenActivity extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity implements ClickListener{
 
     private RecyclerView recyclerView;
     private List<ResponseModel> dataList = new ArrayList<>();
@@ -62,12 +63,32 @@ public class HomeScreenActivity extends AppCompatActivity {
     private void setRecyclerView() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        adapter = new Adapter(dataList);
+        adapter = new Adapter(dataList,this);
         recyclerView.setAdapter(adapter);
     }
 
     private void initViews() {
         recyclerView = findViewById(R.id.recyclerView);
         // btnGetData = findViewById(R.id.btnGetData);
+    }
+
+    @Override
+    public void onItemLongClicked(ResponseModel responseModel) {
+        Intent intent=new Intent();
+        intent.setAction("android.content.Intent.ACTION_SEND");
+        intent.putExtra("newPage","https://www.masaischool.com/");
+
+        if(intent.resolveActivity(getPackageManager())!=null){
+            startActivity(intent);
+        }else{
+            // some error
+        }
+        adapter.updateData(dataList);
+    }
+
+    @Override
+    public void itemDelete(ResponseModel responseModel) {
+        dataList.remove(responseModel);
+        adapter.updateData(dataList);
     }
 }
