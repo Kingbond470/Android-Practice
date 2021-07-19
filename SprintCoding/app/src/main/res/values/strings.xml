@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sprint Coding</string>
+    <string name="date">Date</string>
+    <string name="positive_patients">Positive Patients</string>
+    <string name="negative_patients">Negative Patients</string>
+    <string name="hospitalized_currently">Hospitalized Currently</string>
+    <string name="onventilatorcurrently">onVentilatorCurrently</string>
+    <string name="death_of_patients">Death of Patients</string>
+    <string name="date_checked">Date checked</string>
+</resources>

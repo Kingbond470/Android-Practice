@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutData"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- date, positive, negative,
+    hospitalizedCurrently,onVentilatorCurrently,
+    death, dateChecked
+    -->
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/covid_data"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/tvPositive"
+        style="@style/covid_data"
+        android:text="@string/positive_patients" />
+
+    <TextView
+        android:id="@+id/tvNegative"
+        style="@style/covid_data"
+        android:text="@string/negative_patients" />
+
+    <TextView
+        android:id="@+id/tvHospitalizedCurrent"
+        style="@style/covid_data"
+        android:text="@string/hospitalized_currently" />
+
+    <TextView
+        android:id="@+id/tvVentilatorCurrent"
+        style="@style/covid_data"
+        android:text="@string/onventilatorcurrently" />
+
+    <TextView
+        android:id="@+id/tvDeath"
+        style="@style/covid_data"
+        android:text="@string/death_of_patients" />
+
+    <TextView
+        android:id="@+id/tvDateChecked"
+        style="@style/covid_data"
+        android:text="@string/date_checked" />
+
+</LinearLayout>
