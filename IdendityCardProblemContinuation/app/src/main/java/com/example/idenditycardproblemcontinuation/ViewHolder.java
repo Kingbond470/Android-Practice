@@ -13,8 +13,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     private TextView tvCompanyName, tvAge, tvProfression;
     private IdentityClickListener identityClickListener;
 
-    public ViewHolder(@NonNull  View itemView) {
+    public ViewHolder(@NonNull  View itemView, IdentityClickListener identityClickListener) {
         super(itemView);
+        this.identityClickListener=identityClickListener;
         initViews(itemView);
     }
 
