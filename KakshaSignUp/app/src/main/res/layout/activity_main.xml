@@ -10,7 +10,7 @@
         android:id="@+id/tvLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create an account"
+        android:text="@string/create_an_account"
         android:textColor="@color/white"
         android:background="@color/blue"
         android:padding="12dp"
