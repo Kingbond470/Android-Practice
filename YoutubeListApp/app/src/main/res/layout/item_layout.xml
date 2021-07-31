@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anime AMV Name"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/tvClickBelow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch AMV - Click Below"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/btnWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_anime"
+        android:textSize="20sp"
+        android:autoLink="all"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
