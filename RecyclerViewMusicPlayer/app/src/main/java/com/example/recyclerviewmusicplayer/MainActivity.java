@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity implements MusicClickListene
     private RecyclerView recyclerView;
     private ArrayList<Music> musicList=new ArrayList<>();
     private MusicAdapter musicAdapter;
-    private MusicClickListener musicClickListener;
 
 
     @Override
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements MusicClickListene
 
     private void setRecyclerView() {
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
-        musicAdapter=new MusicAdapter(musicList,musicClickListener);
+        musicAdapter=new MusicAdapter(musicList,this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(musicAdapter);
     }
@@ -62,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements MusicClickListene
     @Override
     public void delete(Music music) {
        // remove music from arraylist and notify adapter
-      //  musicList.remove(music);
+        musicList.remove(music);
+        musicAdapter.updateData(musicList);
     }
 }

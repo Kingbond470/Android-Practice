@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MusicAdapter extends RecyclerView.Adapter<MusicViewHolder> {
-    private ArrayList<Music> musicList=new ArrayList<>();
+    private ArrayList<Music> musicList;
     private MusicClickListener musicClickListener;
 
     public MusicAdapter(ArrayList<Music> musicList, MusicClickListener musicClickListener) {
@@ -34,5 +34,10 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicViewHolder> {
     @Override
     public int getItemCount() {
         return musicList.size();
+    }
+
+    public void updateData(ArrayList<Music> musicList){
+        this.musicList=musicList;
+        notifyDataSetChanged();
     }
 }

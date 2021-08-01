@@ -59,7 +59,7 @@ public class MusicViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View v) {
                // Remove music logic
-              //  musicList.remove(music);
+             musicClickListener.delete(music);
 
             }
         });
