@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="35dp"
+            android:text="Books"
+            android:background="@color/white"
+            android:textColor="#0583EA"
+            android:textAllCaps="false"
+            android:textSize="25sp" />
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:paddingVertical="35dp"
+            android:background="#0583EA" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
