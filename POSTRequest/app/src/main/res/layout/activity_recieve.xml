@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecieveActivity">
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:text="Email"
+        android:layout_marginTop="@dimen/size_20"
+        android:textSize="@dimen/size_22" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:text="Password"
+        android:layout_marginTop="@dimen/size_10"
+        android:textSize="@dimen/size_22" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:text="Title"
+        android:layout_marginTop="@dimen/size_10"
+        android:textSize="@dimen/size_22" />
+
+    <TextView
+        android:id="@+id/tvRequestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:text="Request Type"
+        android:layout_marginTop="@dimen/size_10"
+        android:textSize="@dimen/size_22" />
+
+</LinearLayout>

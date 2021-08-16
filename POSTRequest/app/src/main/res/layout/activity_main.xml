@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--    email, password, title, requestType from the user and a button,-->
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Email"
+        android:textSize="@dimen/size_22" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="10dp"
+        android:hint="Enter password"
+        android:textSize="@dimen/size_22" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="10dp"
+        android:hint="Enter title"
+        android:textSize="@dimen/size_22" />
+
+    <EditText
+        android:id="@+id/etRequestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="10dp"
+        android:hint="Enter request type"
+        android:textSize="@dimen/size_22" />
+
+    <Button
+        android:id="@+id/btnPostRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_20"
+        android:text="Post Request" />
+
+</LinearLayout>
