@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TotalApplesFragment">
+
+    <EditText
+        android:id="@+id/etAppleAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_50"
+        android:hint="Enter no of apples available"
+        android:inputType="number"
+        android:textSize="@dimen/size_22" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_20"
+        android:text="No of apples available"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_22" />
+    <TextView
+        android:id="@+id/tvAppleAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_20"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_22" />
+
+    <Button
+        android:id="@+id/btnGoToBuyApples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_50"
+        android:text="Go To Buy Apple"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_18" />
+
+
+</LinearLayout>

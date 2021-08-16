@@ -1,0 +1,2 @@
+rootProject.name = "Total Apple Count"
+include ':app'
