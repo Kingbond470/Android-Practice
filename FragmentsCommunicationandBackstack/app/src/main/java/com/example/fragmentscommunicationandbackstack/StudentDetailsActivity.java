@@ -15,7 +15,6 @@ public class StudentDetailsActivity extends AppCompatActivity implements Communi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragmentManager=getSupportFragmentManager();
-
         launchStudentPersonalDetailsFragment();
     }
 

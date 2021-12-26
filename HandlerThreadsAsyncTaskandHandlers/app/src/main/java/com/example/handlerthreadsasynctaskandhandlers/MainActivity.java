@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             super.handleMessage(msg);
             int progress=(int)msg.obj;
             progressBar.setProgress(progress);
+
         }
     };
 }

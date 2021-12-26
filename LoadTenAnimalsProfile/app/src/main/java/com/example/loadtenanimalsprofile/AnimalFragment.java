@@ -24,8 +24,17 @@ public class AnimalFragment extends Fragment {
 
     private void buildList(){
         for(int i=0; i<100; i++){
-            Animal animal=new Animal("Zoro",R.drawable.parrot);
+            Animal animal=new Animal("Kajal",R.drawable.kj1);
             animalList.add(animal);
+            Animal animal1=new Animal("Kajal",R.drawable.kj2);
+            animalList.add(animal1);
+            Animal animal2=new Animal("Kajal",R.drawable.kj3);
+            animalList.add(animal2);
+            Animal animal3=new Animal("Kajal",R.drawable.kj4);
+            animalList.add(animal3);
+            Animal animal4=new Animal("Kajal",R.drawable.kj5);
+            animalList.add(animal4);
+
         }
     }
     @Override

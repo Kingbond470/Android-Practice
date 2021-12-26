@@ -14,6 +14,8 @@
         android:layout_marginHorizontal="40dp"
         android:hint="Enter username e.g. kingbond470"
         android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="20dp"
         android:textSize="18sp" />
 
     <Button
@@ -22,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
+        android:textColor="#009688"
         android:text="Get Data" />
 
     <androidx.recyclerview.widget.RecyclerView
