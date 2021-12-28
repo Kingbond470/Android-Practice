@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DisplayToastMessage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EventListenersWe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EventListenersYou" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FacebookLoginPage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/IntentsandIntentFilters" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LayoutWe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LayoutYou" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LifeCycleWe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LifeCycleYou" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LoginScreenDesign" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Masai-Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PhoneInsuranceRenewalLayout" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PlaystoreScreenDesign" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ViewsandLayouts" vcs="Git" />
+  </component>
+</project>
